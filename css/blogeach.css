@@ -1,0 +1,183 @@
+*{
+  padding: 0;
+  margin: 0px;
+}
+
+body{
+  background: #eee;
+  font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+nav
+{ top: 0;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: white;
+  box-shadow: 5px 1px 5px #ccc;
+  position: sticky;
+}
+
+nav h1{
+  font-size: 28px;
+  margin-left: 240px;
+}
+
+.nav-items{
+  margin-left: 700px;
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-items ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-items ul li{
+  margin: 0px 20px;
+  list-style: none;
+}
+
+.nav-items a{
+  text-decoration: none;
+  color: #aaa;
+  font-size: 17px;
+  transition: .1s ease-in-out;
+}
+
+.nav-items a:hover{
+  color: black;
+
+  font-weight: bold;
+}
+
+
+.main-blog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;;
+  width: 900px;
+  margin-top: 40px;
+  border: 1ps solid #eee;
+  border-radius: 8px;
+  /* height: 1200px; */
+  box-shadow: 0px 10px 15px #ccc;
+  margin-bottom: 30px;
+}
+
+.main-blog h1{
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.date-category
+{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.date-category span{
+  font-size: 18px;
+  color: #7757B2;
+}
+
+.date-category hr{
+  width: 1px;
+  color: #7757B2;
+  background: #7757B2;
+  height: 20px;
+  margin: 0px 20px;
+}
+
+.content-blog{
+  padding: 20px;
+}
+
+.content-blog p{
+  opacity: .8;
+  margin-top: 30px;
+  padding: 0px 10px;
+  text-align: justify;
+}
+
+.blog-image{
+  height: 400px;
+  width: 750px;
+  margin-top: 40px;
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.blog-image img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+
+@media(max-width: 540px)
+{
+  .main-blog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;;
+    margin-top: 40px;
+    border: 1ps solid #eee;
+    border-radius: 8px;
+    /* height: 1200px; */
+    box-shadow: 0px 10px 15px #ccc;
+    margin-bottom: 30px;
+
+  }
+
+  nav{
+    width: 350px;
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  nav h1{
+    font-size: 30px;
+    margin: 0;
+    /* margin-right: 70px; */
+  }
+
+  .nav-items{
+    display: none;
+  }
+
+  .main-blog{
+    width: 350px;
+  }
+
+  .main-blog h1{
+    font-size: 25px;
+  }
+  .blog-image{
+    height: 250px;
+    width: 330px;
+  }
+
+
+  .content-blog p{
+    margin-top: 10px;
+  }
+}
