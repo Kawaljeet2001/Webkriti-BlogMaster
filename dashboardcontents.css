@@ -1,0 +1,492 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.main_content{
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+body{
+  font-family: 'Spartan' ;
+}
+
+button, input, textarea:focus{
+  outline: none;
+}
+
+/*This is the styling for the create post section*/
+#create_post_div
+{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.category-selector
+{
+  width: 840px;
+  height: 40px;
+  margin: 10px 0px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 120px;
+  padding: 0px 20px;
+  font-size: 15px;
+}
+
+#custom_category{
+  display: none;
+}
+
+.category-selector:focus{
+  outline: none;
+  border: 2px solid #7757B2;
+}
+.main_content h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 45px !important ;
+  font-weight: 1000;
+  font-family: 'Bree Serif', serif;
+  color: #3B3A4A;
+
+}
+
+#create_post_div form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#create_post_div form input[type="text"]{
+  width: 800px;
+  height: 40px;
+  margin: 10px 0px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 120px;
+  padding: 0px 20px;
+  font-size: 15px;
+}
+#create_post_div form input[type="file"]{
+  margin-top: 15px;
+}
+
+#create_post_div form input:focus{
+  border: 2px solid #7757B2;
+}
+
+
+
+#create_post_div form textarea:focus{
+  border: 2px solid #7757B2;
+}
+#create_post_div form label
+{
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#create_post_div form button{
+  width: 200px;
+  height: 40px;
+  border: none;
+  margin-top: 30px;
+  background: linear-gradient(to right , #614AC9 , #53B5EC) ;
+  box-shadow: 1px 1px 5px black;
+  color: white;
+  border-radius: 120px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#create_post_div form button:hover{
+  cursor: pointer;
+  border: 1px solid #aaa;
+}
+
+#create_post_div form textarea{
+    resize: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#all_posts_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+
+.all-post-each-container{
+  display: flex;
+  /* flex-direction: column; */
+  background: white;
+  height: 110px;
+  width: 1000px;
+  border-radius: 3px;
+  margin-top: 15px;
+  position: relative;
+  box-shadow: 1px 1px 3px #aaa;
+  padding: 20px 20px;
+}
+
+
+.buttons{
+  display: flex;
+  align-items: center;
+  /* margin-left: 400px; */
+  margin-top: 20px;
+
+
+}
+
+.edit_button{
+  background: #b9e986;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons button:hover , .buttons button:nth-child(2):hover , .buttons a:hover{
+  font-size: 16px;
+  border: 1px solid #aaa ;
+
+}
+.buttons button:nth-child(2){
+  background: #cbdde1;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.buttons a{
+  display: block;
+  width: 55px;
+  border-radius: 3px;
+  background: #eb657d;
+  height: 50px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.all-post-each-container:hover
+{
+  background: #f1f5f8;
+  box-shadow: 1px 1px 3px #eee;
+}
+
+.all-post-each-container:hover .blue-bar{
+  display: block;
+}
+.blue-bar{
+  display: none;
+  width: 2px;
+  height: 140px;
+  top: 0;
+  left: 0;
+  background: #58aad9;
+  position: absolute;
+}
+.status{
+  font-weight: bold;
+}
+.category_each{
+  color: #f7af37;
+  margin-top: 7px;
+
+}
+
+.all-post-each-container h2{
+  margin-top: 5px;
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #504f5d;
+  font-family: 'Acme', sans-serif;
+  display: block;
+  /* background: blue; */
+}
+
+.date-holder-other{
+  /* background: green; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /* margin-left: 290px; */
+  flex-basis: 36%;
+}
+
+.category_each-holder{
+  /* background: grey; */
+  flex-basis: 64%;
+}
+
+.all-post-each-container .author{
+  color: #b1b0bc;
+  margin-top: 6px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.date{
+
+  text-align: center;
+  display: flex;
+  font-size: 11px !important;
+  align-items: center;
+  width: 220px;
+  margin-left: 140px;
+  margin-top: 3px;
+  color: #c8c8d0;
+}
+
+
+/* This is the styling for manage post section*/
+
+
+.fa-trash{
+  color: white;
+}
+
+/* .fa-pencil-alt{
+  color: #00b700;
+} */
+.edit_submit_button{
+    max-width: 100%;
+    max-height: 100%;
+    padding: none;
+    margin: none;
+    border: none;
+    background: none;
+}
+
+.edit_submit_button span{
+  height: 100%;
+  width: 100%;
+}
+
+
+#blog_settings_div{
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+#blog_settings_div h2{
+  margin-left: 500px;
+}
+
+
+
+.blog_settings_form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.blog_settings_form label{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0px;
+
+}
+.blog_settings_form input[type="text"]{
+  width: 400px;
+  height: 40px;
+  margin: 10px 0px;
+  margin-top: 20px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 120px;
+  padding: 0px 20px;
+  font-size: 15px;
+}
+
+.blog_settings_form input[type="file"]
+{
+  margin-bottom: 20px;
+}
+
+.blog_settings_form input:focus{
+  border: 2px solid #7757B2;
+}
+
+.blog_settings_form p{
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.blog_settings_form button{
+  margin-left: 0px;
+
+}
+
+.blog_settings_form h5{
+  /* margin-top: 70px;
+  font-size: 35px;
+  color: #7757B2;
+  font-weight: bold;
+  margin-left: 320px;
+  margin-bottom: 50px; */
+
+}
+
+.blog_settings_form textarea{
+    resize: none;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+
+}
+
+.blog_settings_form textarea:focus{
+  border: 2px solid #7757B2;
+}
+
+.social_holder{
+  bottom: -250px;
+  position: absolute;
+}
+
+.save-button{
+  display: block;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 120px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  line-height: 40px;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  bottom: -330px;
+  background: linear-gradient(to right , #614AC9 , #53B5EC) ;
+  box-shadow: 1px 1px 5px black;
+}
+
+.save-button:hover{
+  cursor: pointer;
+  border: 1px solid #aaa;
+}
+
+#contact_details_div{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact_details_div p{
+  margin-top: 20px;
+}
+
+.contact_form_holder{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.contact_form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+
+}
+
+.contact_form div{
+  margin: 15px 0px;
+
+}
+
+.contact_form label{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact_form input{
+  width: 400px;
+  border-radius: 120px;
+  border: 1px solid #aaa;
+  height: 40px;
+  padding: 0px 20px;
+  font-size: 17px;
+}
+
+.contact_form textarea{
+  width: 580px;
+  resize: none;
+  border-radius: 8px;
+  margin-top: 10px;
+
+}
+.contact_form button{
+  margin-top: 30px;
+  display: block;
+  color: white;
+  background: linear-gradient(to right , #614AC9 , #53B5EC) ;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 120px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  line-height: 40px;
+  border: none;
+  font-size: 18px;
+}
+
+.contact_form button:hover{
+  cursor: pointer;
+  border: 1px solid #aaa;
+}
+
+
+#archives_div{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
