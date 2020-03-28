@@ -3,7 +3,7 @@ This Repo consists the code for WEBKRITI organised by AASF 2020
 
 # DESCRIPTION
 
-The name of the Website: BLOG MASTER
+The name of the Website: BLOG MASTER.
 BLOG MASTER is a bloggin platform that lets its user to Create , Edit , Publish and share their blogs.
 
 # FEATURES PROVIDED IN THE APPLICATION:
