@@ -25,7 +25,7 @@ BLOG MASTER is a bloggin platform that lets its user to Create , Edit , Publish 
 Link of the Google Drive Folder is: https://drive.google.com/open?id=1-RwApe-n0E3JHewYfFEfl0WUXGIdSI56
 
 # VIDEO
-Link of the youtube Video is: https://youtu.be/w-TgmdHiWHA
+Link of the youtube Video is: https://youtu.be/w-TgmdHiWHA.
 Link of the Google Drive Folder is: https://drive.google.com/open?id=1-2sax2Lw-fD33CGmB7mlIU9LrEHWx2Kd
 
 # WEBSITE URL
